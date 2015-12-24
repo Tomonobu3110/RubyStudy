@@ -15,7 +15,8 @@ class TweetsController < ApplicationController
   	@tweet.content = params[:tweet][:content]
   	@tweet.user_id = params[:tweet][:user_id]
   	@tweet.save
-  	redirect_to '/tweets/index'
+
+        redirect_to '/tweets/index'
   end
   
 end
